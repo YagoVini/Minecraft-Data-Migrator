@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import "tailwindcss";
+
+@theme {
+  --font-minecraft: "Minecraft", sans-serif;
+  --mc-gray: #c6c6c6;
+  --mc-dark: #373737;
+  --mc-light: #ffffff;
+  --mc-shadow: #000000;
+  --mc-green: #55ff55;
+  --mc-bg: #403020;
+}
+
+:root {
+  font-family: var(--font-minecraft);
+}
+
+body {
+  margin: 0;
+  background-color: var(--mc-bg);
+  background-image: 
+    linear-gradient(45deg, #302010 25%, transparent 25%), 
+    linear-gradient(-45deg, #302010 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #302010 75%), 
+    linear-gradient(-45deg, transparent 75%, #302010 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px 20px, 20px 0;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+  color: #fff;
+}
+
+/* Minecraft Bento Components */
+.mc-container {
+  background: var(--mc-gray);
+  border: 4px solid var(--mc-shadow);
+  box-shadow: inset 4px 4px var(--mc-light), inset -4px -4px var(--mc-dark);
+}
+
+.mc-card {
+  background: #8b8b8b;
+  border: 4px solid var(--mc-shadow);
+  box-shadow: inset -4px -4px var(--mc-dark), inset 4px 4px var(--mc-light);
+}
+
+.mc-button {
+  background: var(--mc-gray) !important;
+  border: 4px solid var(--mc-shadow) !important;
+  box-shadow: inset 4px 4px var(--mc-light), inset -4px -4px var(--mc-dark) !important;
+  color: #000 !important;
+  text-shadow: none !important;
+  padding: 12px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.1s;
+}
+
+.mc-button:active {
+  transform: scale(0.95);
+  box-shadow: inset -4px -4px var(--mc-light), inset 4px 4px var(--mc-dark) !important;
+}
+
+.mc-button.primary {
+  background: #5a5 !important;
+  color: #fff !important;
+  text-shadow: 2px 2px #000 !important;
+}
+
+.mc-slot {
+  aspect-ratio: 1;
+  background: #373737;
+  border: 3px solid #1e1e1e;
+  box-shadow: inset -2px -2px #5a5a5a, inset 2px 2px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mc-panel {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--mc-dark);
+  padding: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #aaa;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #7e7e7e;
+  border: 2px solid #000;
+}
+
+.scrollbar-mine::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-mine::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+}
+.scrollbar-mine::-webkit-scrollbar-thumb {
+  background: #555;
+  border: none;
+}
+

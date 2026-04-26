@@ -1,0 +1,6 @@
+{
+  "name": "Minecraft Data Migrator",
+  "description": "A pixel-perfect tool to migrate inventory, UUID, and player stats between Minecraft .dat playerdata files.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
