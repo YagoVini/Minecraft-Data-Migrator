@@ -9,3 +9,5 @@
 ## Environment Variables
 - `GEMINI_API_KEY`: For any AI-powered assistance (if needed).
 - `APP_URL`: Base URL.
+
+<img width="1035" height="717" alt="image" src="https://github.com/user-attachments/assets/b39973d6-8121-46fe-ac65-4c3f59c5b074" />
